@@ -1,13 +1,12 @@
 //=========================================================================================================================
 // Optional
 //=========================================================================================================================
-// https://wiki.facepunch.com/sbox/Shader_Reference
 HEADER
 {
 	CompileTargets = ( IS_SM_50 && ( PC || VULKAN ) );
-	Description = "BlendWorldNormal";
-	DevShader = true;
-	Version = 2;
+	Description = "Blendable World Normal";
+	Version = 1;
+	DevShader = false;
 }
 
 //=========================================================================================================================
@@ -34,6 +33,7 @@ MODES
 COMMON
 {
 	#include "common/shared.hlsl"
+	
 }
 
 //=========================================================================================================================
@@ -41,6 +41,7 @@ COMMON
 struct VertexInput
 {
 	#include "common/vertexinput.hlsl"
+	
 };
 
 //=========================================================================================================================
@@ -48,6 +49,10 @@ struct VertexInput
 struct PixelInput
 {
 	#include "common/pixelinput.hlsl"
+	
+	float3 vPositionOs : POSITION;
+	float4 vNormalOs : NORMAL;
+	float2 vTexCoord : TEXCOORD0;
 };
 
 //=========================================================================================================================
@@ -55,13 +60,12 @@ struct PixelInput
 VS
 {
 	#include "common/vertex.hlsl"
-	//
-	// Main
-	//
+	
 	PixelInput MainVs( INSTANCED_SHADER_PARAMS( VS_INPUT i ) )
 	{
 		PixelInput o = ProcessVertex( i );
 		// Add your vertex manipulation functions here
+				
 		return FinalizeVertex( o );
 	}
 }
@@ -71,11 +75,19 @@ VS
 PS
 {
     #include "common/pixel.hlsl"
-	//
-	// Main
-	//
+	#include "common/pixel_blend.hlsl"
+
 	PixelOutput MainPs( PixelInput i )
 	{
+		float3 position = vPositionOs;
+		float3 worldNormal = i.vNormalOs.xyz;
+		float2 vUV = i.vTexCoord.xy;
+		
+        //MaterialParameters_t matA = TexToMaterialParameters( Tex2DS( g_tColorA, TextureFiltering, vUV ), Tex2DS( g_tNormalA, TextureFiltering, vUV ), Tex2DS( g_tRmaA, TextureFiltering, vUV ), g_flTintColorA);
+		//MaterialParameters_t matB = TexToMaterialParameters( Tex2DS( g_tColorB, TextureFiltering, vUV ), Tex2DS( g_tNormalB, TextureFiltering, vUV ), Tex2DS( g_tRmaB, TextureFiltering, vUV ), g_flTintColorB);
+		
+		//material = MaterialParametersMultiblend( matA, matB, worldNormal.b, g_flBlendSoftnessB );
+	
 		Material m = GatherMaterial( i );
 		/* m.Metalness = 1.3f; // Forces the object to be metalic */
 		return FinalizePixelMaterial( i, m );
