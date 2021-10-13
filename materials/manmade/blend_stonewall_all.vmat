@@ -6,9 +6,6 @@ Layer0
 
 	F_MULTIBLEND 3 // 4 Layers
 
-	//---- Use Tint Masks In Vertex Paint ----
-	F_USE_TINT_MASKS_IN_VERTEX_PAINT 1
-
 	//---- Color ----
 	g_flModelTintAmount "1.000"
 	g_vColorTint "[1.000000 0.000000 0.000000 0.000000]"
@@ -59,7 +56,7 @@ Layer0
 
 	//---- Material D ----
 	g_flBlendSoftnessD "0.100"
-	g_flTintColorD "[0.231373 0.494118 0.670588 0.000000]"
+	g_flTintColorD "[0.125490 0.321569 0.482353 1.000000]"
 	g_vTexCoordScale4 "[1.000 1.000]"
 	TextureAmbientOcclusionD "[1.000000 0.000000 0.000000 0.000000]"
 	TextureBlendMaskD "textures/manmade/stonewall/Stonewall_painted_HT.png"

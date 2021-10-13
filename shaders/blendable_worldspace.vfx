@@ -41,6 +41,7 @@ COMMON
 struct VertexInput
 {
 	#include "common/vertexinput.hlsl"
+	#include "vr_shared_standard_vs_input.fxc"
 	
 };
 
@@ -48,7 +49,7 @@ struct VertexInput
 
 struct PixelInput
 {
-	#include "common/pixelinput.hlsl"
+	#include "vr_shared_standard_ps_input.fxc"
 	
 	float3 vPositionOs : POSITION;
 	float4 vNormalOs : NORMAL;
@@ -60,6 +61,8 @@ struct PixelInput
 VS
 {
 	#include "common/vertex.hlsl"
+	#include "vr_shared_standard_vs_code.fxc"
+
 	
 	PixelInput MainVs( INSTANCED_SHADER_PARAMS( VS_INPUT i ) )
 	{
@@ -74,8 +77,10 @@ VS
 
 PS
 {
+	#include "bindlessfastpath.fxc"
+	#include "vr_common_samplers.fxc"
     #include "common/pixel.hlsl"
-	#include "common/pixel_blend.hlsl"
+    #include "common/pixel_blend.hlsl"
 
 	PixelOutput MainPs( PixelInput i )
 	{
@@ -83,10 +88,10 @@ PS
 		float3 worldNormal = i.vNormalOs.xyz;
 		float2 vUV = i.vTexCoord.xy;
 		
-        //MaterialParameters_t matA = TexToMaterialParameters( Tex2DS( g_tColorA, TextureFiltering, vUV ), Tex2DS( g_tNormalA, TextureFiltering, vUV ), Tex2DS( g_tRmaA, TextureFiltering, vUV ), g_flTintColorA);
-		//MaterialParameters_t matB = TexToMaterialParameters( Tex2DS( g_tColorB, TextureFiltering, vUV ), Tex2DS( g_tNormalB, TextureFiltering, vUV ), Tex2DS( g_tRmaB, TextureFiltering, vUV ), g_flTintColorB);
+        MaterialParameters_t matA = TexToMaterialParameters( Tex2DS( g_tColorA, TextureFiltering, vUV ), Tex2DS( g_tNormalA, TextureFiltering, vUV ), Tex2DS( g_tRmaA, TextureFiltering, vUV ), g_flTintColorA);
+		MaterialParameters_t matB = TexToMaterialParameters( Tex2DS( g_tColorB, TextureFiltering, vUV ), Tex2DS( g_tNormalB, TextureFiltering, vUV ), Tex2DS( g_tRmaB, TextureFiltering, vUV ), g_flTintColorB);
 		
-		//material = MaterialParametersMultiblend( matA, matB, worldNormal.b, g_flBlendSoftnessB );
+		material = MaterialParametersMultiblend( matA, matB, worldNormal.b, g_flBlendSoftnessB );
 	
 		Material m = GatherMaterial( i );
 		/* m.Metalness = 1.3f; // Forces the object to be metalic */
