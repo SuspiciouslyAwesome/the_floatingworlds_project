@@ -11,7 +11,7 @@
 				[
 					{
 						_class = "LODGroup"
-						switch_threshold = 10.0
+						switch_threshold = 0.0
 						meshes = 
 						[
 							"Box_Wood_01_LOD0",
@@ -19,7 +19,7 @@
 					},
 					{
 						_class = "LODGroup"
-						switch_threshold = 20.0
+						switch_threshold = 150.0
 						meshes = 
 						[
 							"unnamed_1",
@@ -27,7 +27,7 @@
 					},
 					{
 						_class = "LODGroup"
-						switch_threshold = 40.0
+						switch_threshold = 250.0
 						meshes = 
 						[
 							"unnamed_2",
@@ -35,7 +35,7 @@
 					},
 					{
 						_class = "LODGroup"
-						switch_threshold = 80.0
+						switch_threshold = 350.0
 						meshes = 
 						[
 							"unnamed_3",
