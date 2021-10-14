@@ -52,9 +52,9 @@
 						parent_bone = ""
 						surface_prop = "wood"
 						collision_prop = "default"
-						origin = [ 0.06522, -0.003319, 29.947746 ]
+						origin = [ 0.130424, -0.084819, 22.47982 ]
 						angles = [ 0.0, 0.0, 0.0 ]
-						dimensions = [ 64.0, 80.0, 60.253563 ]
+						dimensions = [ 48.646744, 60.287109, 45.317711 ]
 					},
 				]
 			},
@@ -135,7 +135,7 @@
 				[
 					{
 						_class = "ModelModifier_ScaleAndMirror"
-						scale = 20.0
+						scale = 15.0
 						mirror_x = false
 						mirror_y = false
 						mirror_z = false

@@ -11,7 +11,7 @@
 				[
 					{
 						_class = "ModelModifier_ScaleAndMirror"
-						scale = 0.5
+						scale = 0.33
 						mirror_x = false
 						mirror_y = false
 						mirror_z = false
@@ -58,7 +58,7 @@
 						_class = "DefaultMaterialGroup"
 						remaps = [  ]
 						use_global_default = true
-						global_default_material = "models/props/natural/heather/heather_v2/heather_v2.vmat"
+						global_default_material = "models/props/natural/heather/heather_v2.vmat"
 					},
 				]
 			},

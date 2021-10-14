@@ -45,7 +45,7 @@ Layer0
 	//---- Material C ----
 	g_flBlendSoftnessC "0.100"
 	g_flTintColorC "[0.603922 0.525490 0.501961 0.000000]"
-	g_vTexCoordScale3 "[1.500 1.500]"
+	g_vTexCoordScale3 "[2.500 2.500]"
 	TextureAmbientOcclusionC "textures/terrain/gravel/Gravel_ao.png"
 	TextureBlendMaskC "textures/terrain/gravel/gravel_height.png"
 	TextureColorC "textures/terrain/gravel/Gravel_basecolor.png"

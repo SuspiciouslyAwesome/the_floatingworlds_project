@@ -6,9 +6,12 @@ Layer0
 
 	F_MULTIBLEND 3 // 4 Layers
 
+	//---- Use Tint Masks In Vertex Paint ----
+	F_USE_TINT_MASKS_IN_VERTEX_PAINT 1
+
 	//---- Color ----
 	g_flModelTintAmount "1.000"
-	g_vColorTint "[1.000000 0.000000 0.000000 0.000000]"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -21,7 +24,7 @@ Layer0
 	g_flDirectionalLightmapStrength "1.000"
 
 	//---- Material A ----
-	g_flTintColorA "[1.000000 1.000000 1.000000 0.000000]"
+	g_flTintColorA "[0.000000 0.000000 0.000000 0.000000]"
 	TextureAmbientOcclusionA "textures/manmade/stonewall/stonewall_ao.png"
 	TextureBlendMaskA "textures/manmade/stonewall/stonewall_ht.png"
 	TextureColorA "textures/manmade/stonewall/Stonewall_DF.png"
@@ -47,7 +50,7 @@ Layer0
 	g_flTintColorC "[1.000000 1.000000 1.000000 0.000000]"
 	g_vTexCoordScale3 "[1.000 1.000]"
 	TextureAmbientOcclusionC "[1.000000 0.000000 0.000000 0.000000]"
-	TextureBlendMaskC "textures/manmade/stonewall/Stonewall_plaster_HT_1.png"
+	TextureBlendMaskC "[0.667000 0.667000 0.667000 0.000000]"
 	TextureColorC "textures/manmade/stonewall/Stonewall_plaster_DF_1.png"
 	TextureMetalnessC "[0.000000 0.000000 0.000000 0.000000]"
 	TextureNormalC "textures/manmade/stonewall/Stonewall_plaster_NM_1.png"
@@ -56,10 +59,10 @@ Layer0
 
 	//---- Material D ----
 	g_flBlendSoftnessD "0.100"
-	g_flTintColorD "[0.125490 0.321569 0.482353 1.000000]"
+	g_flTintColorD "[1.000000 1.000000 1.000000 1.000000]"
 	g_vTexCoordScale4 "[1.000 1.000]"
 	TextureAmbientOcclusionD "[1.000000 0.000000 0.000000 0.000000]"
-	TextureBlendMaskD "textures/manmade/stonewall/Stonewall_painted_HT.png"
+	TextureBlendMaskD "textures/manmade/stonewall/stonewall_painted_ht.png"
 	TextureColorD "textures/manmade/stonewall/Stonewall_painted_DF.png"
 	TextureMetalnessD "[0.000000 0.000000 0.000000 0.000000]"
 	TextureNormalD "textures/manmade/stonewall/Stonewall_painted_NM.png"
@@ -70,6 +73,6 @@ Layer0
 	g_nScaleTexCoordUByModelScaleAxis "0"
 	g_nScaleTexCoordVByModelScaleAxis "0"
 	g_vTexCoordOffset "[0.000 0.000]"
-	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScale "[2.000 2.000]"
 	g_vTexCoordScrollSpeed "[0.000 0.000]"
 }
