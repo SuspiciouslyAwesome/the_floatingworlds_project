@@ -11,6 +11,14 @@
 				[
 					{
 						_class = "RenderMeshFile"
+						children = 
+						[
+							{
+								_class = "RenameStream"
+								from_name = "color$0"
+								to_name = "VertexPaintBlendParams$0"
+							},
+						]
 						filename = "models/structures/lighthouse/Circle.001.fbx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
@@ -27,6 +35,14 @@
 					},
 					{
 						_class = "RenderMeshFile"
+						children = 
+						[
+							{
+								_class = "RenameStream"
+								from_name = "color$0"
+								to_name = "VertexPaintBlendParams$0"
+							},
+						]
 						filename = "models/structures/lighthouse/Circle.002.fbx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
@@ -72,7 +88,7 @@
 							},
 						]
 						use_global_default = true
-						global_default_material = "textures/manmade/stonewall/plaster.vmat"
+						global_default_material = "materials/manmade/blend_stonewall_all.vmat"
 					},
 				]
 			},

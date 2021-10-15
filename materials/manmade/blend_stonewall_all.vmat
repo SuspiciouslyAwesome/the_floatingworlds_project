@@ -10,7 +10,7 @@ Layer0
 	F_USE_TINT_MASKS_IN_VERTEX_PAINT 1
 
 	//---- Color ----
-	g_flModelTintAmount "1.000"
+	g_flModelTintAmount "0.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
 
 	//---- Fade ----
@@ -24,7 +24,7 @@ Layer0
 	g_flDirectionalLightmapStrength "1.000"
 
 	//---- Material A ----
-	g_flTintColorA "[0.000000 0.000000 0.000000 0.000000]"
+	g_flTintColorA "[1.000000 1.000000 1.000000 0.000000]"
 	TextureAmbientOcclusionA "textures/manmade/stonewall/stonewall_ao.png"
 	TextureBlendMaskA "textures/manmade/stonewall/stonewall_ht.png"
 	TextureColorA "textures/manmade/stonewall/Stonewall_DF.png"
