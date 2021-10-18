@@ -30,7 +30,7 @@
 						[
 							{
 								from = ""
-								to = "models/structures/house_kit/plaster.vmat"
+								to = "materials/manmade/blend_stonewall_stone_plaster.vmat"
 							},
 						]
 						use_global_default = false

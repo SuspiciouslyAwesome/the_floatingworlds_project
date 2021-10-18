@@ -30,7 +30,7 @@
 						[
 							{
 								from = ""
-								to = "models/structures/house_kit/plaster.vmat"
+								to = "materials/manmade/blend_stonewall_stone_plaster.vmat"
 							},
 						]
 						use_global_default = false
@@ -73,6 +73,14 @@
 					{
 						_class = "RenderMeshFile"
 						name = "WallKit_Stairs_01_LOD0"
+						children = 
+						[
+							{
+								_class = "RenameStream"
+								from_name = "color$0"
+								to_name = "VertexPaintBlendParams$0"
+							},
+						]
 						filename = "models/structures/house_kit/wallkit_doorframe_02_lod0.fbx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]

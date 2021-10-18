@@ -66,7 +66,7 @@
 						_class = "DefaultMaterialGroup"
 						remaps = [  ]
 						use_global_default = true
-						global_default_material = "models/props/natural/rocks/rock_04/rock_04.vmat"
+						global_default_material = "models/props/natural/rocks/rock_04/rock_04_blend.vmat"
 					},
 				]
 			},
