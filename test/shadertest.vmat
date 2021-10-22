@@ -2,10 +2,7 @@
 
 Layer0
 {
-	shader "blendable_worldspace.vfx"
-
-	//---- Z-Buffering ----
-	F_DISABLE_Z_BUFFERING 1
+	shader "testshader.vfx"
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
