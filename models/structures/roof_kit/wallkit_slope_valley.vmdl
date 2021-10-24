@@ -44,6 +44,17 @@
 						use_global_default = false
 						global_default_material = ""
 					},
+					{
+						_class = "MaterialGroup"
+						name = "Mossy"
+						remaps = 
+						[
+							{
+								from = "materials/manmade/roof_shingles.vmat"
+								to = "materials/manmade/roof_shingles_moss_blend.vmat"
+							},
+						]
+					},
 				]
 			},
 			{
