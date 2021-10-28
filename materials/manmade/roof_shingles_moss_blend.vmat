@@ -38,7 +38,7 @@ Layer0
 
 	//---- Material B ----
 	g_flBlendSoftnessB "0.100"
-	g_flTintColorB "[0.698039 1.000000 0.000000 1.000000]"
+	g_flTintColorB "[0.000000 0.000000 0.000000 1.000000]"
 	g_vTexCoordScale2 "[1.000 1.000]"
 	TextureAmbientOcclusionB "textures/manmade/roofing_shingles_clay/shingles_01_ao.png"
 	TextureBlendMaskB "textures/manmade/roofing_shingles_clay/shingles_01_ht.png"
@@ -46,7 +46,7 @@ Layer0
 	TextureMetalnessB "[0.000000 0.000000 0.000000 0.000000]"
 	TextureNormalB "textures/terrain/moss/texturescom_nature_moss3_1k_normal.tif"
 	TextureRoughnessB "[0.784314 0.000000 0.000000 0.000000]"
-	TextureTintMaskB "[0.000000 0.000000 0.000000 0.000000]"
+	TextureTintMaskB "[0.250980 0.250980 0.250980 0.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
