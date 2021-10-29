@@ -10,7 +10,7 @@ Layer0
 	TextureAmbientOcclusion "[1.000000 1.000000 1.000000 0.000000]"
 
 	//---- Color ----
-	g_flModelTintAmount "1.000"
+	g_flModelTintAmount "0.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
 	TextureColor "models/props/natural/pines/texturescom_wood_barkpine1_1k_albedo2.tif"
 
