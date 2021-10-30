@@ -4,9 +4,6 @@ Layer0
 {
 	shader "complex.vfx"
 
-	//---- PBR ----
-	F_DIFFUSE_WRAP 1
-
 	//---- Rendering ----
 	F_RENDER_BACKFACES 1
 
@@ -40,7 +37,7 @@ Layer0
 	TextureNormal "models/props/natural/pines/pine_01/pine_01_lod3_normal.png"
 
 	//---- Roughness ----
-	TextureRoughness "materials/default/default_rough.tga"
+	TextureRoughness "[0.498039 0.498039 0.498039 0.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"
@@ -53,9 +50,4 @@ Layer0
 	g_flAlphaTestReference "0.500"
 	g_flAntiAliasedEdgeStrength "1.000"
 	TextureTranslucency "models/props/natural/pines/pine_01/pine_01_lod3_alpha.png"
-
-	//---- Transmission ----
-	g_flDiffuseExponent "1.000"
-	g_flDiffuseWrap "1.000"
-	g_vDiffuseWrapColor "[1.000000 0.501961 0.301961 0.000000]"
 }

@@ -4,8 +4,12 @@ Layer0
 {
 	shader "complex.vfx"
 
+	//---- Normal ----
+	F_USE_BENT_NORMALS 1
+
 	//---- PBR ----
-	F_TRANSMISSIVE_BACKFACE_NDOTL 1
+	F_DIFFUSE_WRAP 1
+	F_SPECULAR 1
 
 	//---- Rendering ----
 	F_RENDER_BACKFACES 1
@@ -20,8 +24,8 @@ Layer0
 
 	//---- Color ----
 	g_flModelTintAmount "1.000"
-	g_vColorTint "[0.701961 0.733333 0.309804 0.000000]"
-	TextureColor "[1.000000 1.000000 1.000000 0.000000]"
+	g_vColorTint "[1.000000 1.000000 1.000000 1.000000]"
+	TextureColor "models/props/natural/grass/textures/grass_diffuse.png"
 
 	//---- Fade ----
 	g_flFadeExponent "1.000"
@@ -29,14 +33,11 @@ Layer0
 	//---- Fog ----
 	g_bFogEnabled "1"
 
-	//---- Lighting ----
-	g_flDirectionalLightmapMinZ "0.050"
-	g_flDirectionalLightmapStrength "0.978"
-
 	//---- Metalness ----
 	g_flMetalness "0.000"
 
 	//---- Normal ----
+	TextureBentNormal "materials/default/default_bentnormal.tga"
 	TextureNormal "models/props/natural/grass/textures/grass_normal.png"
 
 	//---- Roughness ----
@@ -55,5 +56,7 @@ Layer0
 	TextureTranslucency "models/props/natural/grass/textures/Grass_alpha.png"
 
 	//---- Transmission ----
-	TextureTransmissiveColor "[0.356863 0.435294 0.168627 0.000000]"
+	g_flDiffuseExponent "1.000"
+	g_flDiffuseWrap "1.000"
+	g_vDiffuseWrapColor "[1.000000 1.000000 1.000000 1.000000]"
 }
