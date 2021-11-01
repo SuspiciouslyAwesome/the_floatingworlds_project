@@ -29,16 +29,8 @@
 						remaps = 
 						[
 							{
-								from = ""
-								to = "x.vmat"
-							},
-							{
-								from = "placeholder.vmat"
-								to = ""
-							},
-							{
 								from = "plane.vmat"
-								to = "materials/manmade/blend_stonewall_stone_plaster.vmat"
+								to = "materials/manmade/blend_brickwall_plaster.vmat"
 							},
 						]
 						use_global_default = false
