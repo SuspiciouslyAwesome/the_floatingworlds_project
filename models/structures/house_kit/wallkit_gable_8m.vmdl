@@ -29,7 +29,7 @@
 						remaps = 
 						[
 							{
-								from = "plane.vmat"
+								from = ""
 								to = "materials/manmade/blend_brickwall_plaster.vmat"
 							},
 						]
