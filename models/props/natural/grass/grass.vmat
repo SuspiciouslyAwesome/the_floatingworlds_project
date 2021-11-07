@@ -23,7 +23,7 @@ Layer0
 	TextureAmbientOcclusion "models/props/natural/grass/textures/grass_ao.png"
 
 	//---- Color ----
-	g_flModelTintAmount "1.000"
+	g_flModelTintAmount "0.000"
 	g_vColorTint "[1.000000 1.000000 1.000000 1.000000]"
 	TextureColor "models/props/natural/grass/textures/grass_diffuse.png"
 

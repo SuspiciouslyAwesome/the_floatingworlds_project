@@ -34,7 +34,7 @@
 							},
 							{
 								from = "defaultmat.vmat"
-								to = "models/structures/brickwall_kit/brickwall_pillar.vmat"
+								to = "models/structures/brickwall_kit/blend_brickwall_pillar_plaster.vmat"
 							},
 							{
 								from = "windows_02_wood_transparent.vmat"
@@ -53,6 +53,14 @@
 					{
 						_class = "RenderMeshFile"
 						name = "Window_wood_01_shutter_01_LOD0"
+						children = 
+						[
+							{
+								_class = "RenameStream"
+								from_name = "color$0"
+								to_name = "VertexPaintBlendParams$0"
+							},
+						]
 						filename = "models/structures/window_kit/window_wood_03_lod0.fbx"
 						import_translation = [ 0.0, 0.0, 0.0 ]
 						import_rotation = [ 0.0, 0.0, 0.0 ]
