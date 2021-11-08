@@ -65,12 +65,16 @@
 						remaps = 
 						[
 							{
-								from = ""
-								to = "materials/manmade/ground_stone_tiles.vmat"
+								from = "checker.vmat"
+								to = "materials/dev/grid.vmat"
+							},
+							{
+								from = "grass.vmat"
+								to = "materials/terrain/grass.vmat"
 							},
 						]
 						use_global_default = false
-						global_default_material = ""
+						global_default_material = "materials/dev/grid.vmat"
 					},
 				]
 			},
