@@ -14,7 +14,7 @@ Layer0
 	F_ALPHA_TEST 1
 
 	//---- Ambient Occlusion ----
-	g_flAmbientOcclusionDirectDiffuse "0.000"
+	g_flAmbientOcclusionDirectDiffuse "0.615"
 	g_flAmbientOcclusionDirectSpecular "1.000"
 	TextureAmbientOcclusion "models/props/natural/heather/Heather_ao.png"
 
@@ -40,7 +40,7 @@ Layer0
 	TextureNormal "models/props/natural/heather/Heather_normal.png"
 
 	//---- Roughness ----
-	TextureRoughness "[1.000000 1.000000 1.000000 1.000000]"
+	TextureRoughness "[0.498039 0.498039 0.498039 1.000000]"
 
 	//---- Texture Coordinates ----
 	g_nScaleTexCoordUByModelScaleAxis "0"

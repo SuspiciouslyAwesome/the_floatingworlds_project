@@ -75,7 +75,7 @@
 						align_origin_z_type = "None"
 						filename = "models/props/manmade/generic/nero/Nero.fbx"
 						import_scale = 0.5
-						faceMergeAngle = 80.0
+						faceMergeAngle = 30.0
 						maxHullVertices = 0
 						import_mode = "SingleHull"
 						optimization_algorithm = "QEM"
