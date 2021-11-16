@@ -36,6 +36,17 @@
 						use_global_default = false
 						global_default_material = ""
 					},
+					{
+						_class = "MaterialGroup"
+						name = "plaster"
+						remaps = 
+						[
+							{
+								from = "materials/manmade/blend_brickwall_plaster.vmat"
+								to = "materials/manmade/plaster.vmat"
+							},
+						]
+					},
 				]
 			},
 			{
